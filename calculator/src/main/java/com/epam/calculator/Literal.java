@@ -5,10 +5,10 @@ import java.util.Arrays;
 
 public class Literal {
 	
-	public int literals;
+	public double literals;
 	private ArrayList<Literal> literalList;
 
-	public Literal(int literals ) {
+	public Literal(double literals ) {
 		this.literalList = new ArrayList<>();
 		this.literals = literals;
 		
@@ -22,6 +22,11 @@ public class Literal {
 	public ArrayList<Literal> getLiterals() {
 		return literalList;
 				
+	}
+	
+	@Override
+	public String toString() {
+		return " "+ literals ;
 	}
 
 }

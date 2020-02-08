@@ -1,8 +1,10 @@
 package com.epam.calculator;
 
-import java.util.*;
-
 public class Calculation {
 
-	
+	public Calculation(double number1, char operator,double number2) {
+		
+		
+	}
+
 }
