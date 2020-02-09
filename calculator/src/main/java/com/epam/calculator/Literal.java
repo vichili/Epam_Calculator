@@ -14,7 +14,7 @@ public class Literal {
 		
 	}
 	
-	public void addLiterals(Literal... literalList ) {
+	public void addLiterals(Literal...literalList ) {
 		this.literalList.addAll(Arrays.asList(literalList));
 		
 	}
