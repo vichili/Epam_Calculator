@@ -26,26 +26,29 @@ public class App
 				switch(operator) {
 
 				case '+' :  result =  (double) cal.add(result);
-				System.out.println(result);
+				System.out.println("= " + result);
 				break;
 
 				case '-' :  result = cal.sub(result); 
-				System.out.println(result);
+				System.out.println("= " + result);
 				break;
 
 				case '*' :  result = cal.mul(result);
-				System.out.println(result);
+				System.out.println("= " + result);
 				break;
 
 				case '/' :  result = cal.div(result);
-				System.out.println(result);
+				System.out.println("= " + result);
 				break;
+				
+				case '=' : System.out.println("= " + result);;
+				System.exit(0);
 
 				}
 
 			}while(true);
 		}
-		catch (InputMismatchException e){
+		catch (Exception e){
 			System.out.println(e + ". Invalid Input");
 		}
 		
