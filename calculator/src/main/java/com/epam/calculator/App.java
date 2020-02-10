@@ -14,10 +14,12 @@ public class App
 		char operator;
 
 		System.out.println("---------------CALCULATOR---------------");
+		System.out.println("Note: Enter Number followed by Arithmetic Operation ");
+		System.out.println("Note: Don't give Number as Input in the place Arithmetic Operation");
 
 		try {
 			result = in.nextDouble();
-			
+
 			do {
 
 				operator = in.next().charAt(0);
@@ -41,9 +43,9 @@ public class App
 				System.out.println(result);
 				break;
 
-				case '=' :
-				System.out.println(" = " + result);
+				case '=' :System.out.println(" = " + result);
 				System.exit(0);
+				break;
 
 				}
 

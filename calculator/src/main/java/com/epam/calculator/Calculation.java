@@ -3,7 +3,7 @@ package com.epam.calculator;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Calculation {
+public class Calculation extends App {
 
 	Scanner in = new Scanner(System.in);
 

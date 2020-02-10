@@ -7,6 +7,7 @@
   <groupId>com.epam</groupId>
   <artifactId>calculator</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
 
   <name>calculator</name>
   <!-- FIXME change it to the project's website -->
