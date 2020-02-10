@@ -1,6 +1,6 @@
 package com.epam.calculator;
 
-import java.util.*;
+import java.util.Scanner;
 import java.lang.System;
 
 public class App 
@@ -17,7 +17,7 @@ public class App
 
 		try {
 			result = in.nextDouble();
-
+			
 			do {
 
 				operator = in.next().charAt(0);
@@ -25,23 +25,24 @@ public class App
 
 				switch(operator) {
 
-				case '+' :  result =  (double) cal.add(result);
-				System.out.println("= " + result);
+				case '+' :  result = cal.add(result);
+				System.out.println(result);
 				break;
 
 				case '-' :  result = cal.sub(result); 
-				System.out.println("= " + result);
+				System.out.println(result);
 				break;
 
 				case '*' :  result = cal.mul(result);
-				System.out.println("= " + result);
+				System.out.println(result);
 				break;
 
 				case '/' :  result = cal.div(result);
-				System.out.println("= " + result);
+				System.out.println(result);
 				break;
-				
-				case '=' : System.out.println("= " + result);;
+
+				case '=' :
+				System.out.println(" = " + result);
 				System.exit(0);
 
 				}
@@ -51,7 +52,7 @@ public class App
 		catch (Exception e){
 			System.out.println(e + ". Invalid Input");
 		}
-		
+
 		in.close();
 
 	}

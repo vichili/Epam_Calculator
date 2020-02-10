@@ -1,31 +1,32 @@
 package com.epam.calculator;
 
-import java.util.*;
+import java.util.InputMismatchException;
+import java.util.Scanner;
 
 public class Calculation {
 
 	Scanner in = new Scanner(System.in);
 
 	public double add(double number1) {
-			double number2 = in.nextDouble(); 
-			number1 += number2;
-			return number1;
+		double number2 = in.nextDouble(); 
+		number1 += number2;
+		return number1;
 	}
 
 	public double sub(double number1) {
-		double number2 = in.nextDouble(); 
+		double number2 = in.nextDouble();
 		number1 -= number2;
 		return number1;
 	}
 
 	public double mul(double number1) {
-		double number2 = in.nextDouble(); 
+		double number2 = in.nextDouble();
 		number1 *= number2;
 		return number1;
 	}
 
 	public double div(double number1) {
-		double number2 = in.nextDouble(); 
+		double number2 = in.nextDouble();
 		number1 /= number2;
 		return number1;
 	}
